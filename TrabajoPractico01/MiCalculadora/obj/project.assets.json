@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desktop\\programacion II segundo recursada\\TrabajosPracticos\\TrabajoPractico01\\MiCalculadora\\MiCalculadora.csproj",
+      "projectUniqueName": "D:\\Desktop\\programacion II segundo recursada\\TrabajosPracticos\\tps_laboratorio_ii\\TrabajoPractico01\\MiCalculadora\\MiCalculadora.csproj",
       "projectName": "MiCalculadora",
-      "projectPath": "D:\\Desktop\\programacion II segundo recursada\\TrabajosPracticos\\TrabajoPractico01\\MiCalculadora\\MiCalculadora.csproj",
+      "projectPath": "D:\\Desktop\\programacion II segundo recursada\\TrabajosPracticos\\tps_laboratorio_ii\\TrabajoPractico01\\MiCalculadora\\MiCalculadora.csproj",
       "packagesPath": "C:\\Users\\54114\\.nuget\\packages\\",
-      "outputPath": "D:\\Desktop\\programacion II segundo recursada\\TrabajosPracticos\\TrabajoPractico01\\MiCalculadora\\obj\\",
+      "outputPath": "D:\\Desktop\\programacion II segundo recursada\\TrabajosPracticos\\tps_laboratorio_ii\\TrabajoPractico01\\MiCalculadora\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\54114\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "D:\\Desktop\\programacion II segundo recursada\\TrabajosPracticos\\TrabajoPractico01\\Entidades\\Entidades.csproj": {
-              "projectPath": "D:\\Desktop\\programacion II segundo recursada\\TrabajosPracticos\\TrabajoPractico01\\Entidades\\Entidades.csproj"
+            "D:\\Desktop\\programacion II segundo recursada\\TrabajosPracticos\\tps_laboratorio_ii\\TrabajoPractico01\\Entidades\\Entidades.csproj": {
+              "projectPath": "D:\\Desktop\\programacion II segundo recursada\\TrabajosPracticos\\tps_laboratorio_ii\\TrabajoPractico01\\Entidades\\Entidades.csproj"
             }
           }
         }

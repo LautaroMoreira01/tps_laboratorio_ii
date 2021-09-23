@@ -13,8 +13,7 @@ namespace MiCalculadora
 {
     public partial class FormCalculadora : Form
     {
-        //TODO
-        //Comentarios
+
         /// <summary>
         /// Constructor de la clase FormCalculadora.
         /// </summary>

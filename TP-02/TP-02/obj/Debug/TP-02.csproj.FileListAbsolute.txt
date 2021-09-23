@@ -31,3 +31,13 @@ D:\Desktop\TP-02\TP-02\bin\Debug\Entidades.dll
 D:\Desktop\TP-02\TP-02\bin\Debug\Entidades.pdb
 D:\Desktop\TP-02\TP-02\obj\Debug\TP-02.csproj.CopyComplete
 D:\Desktop\TP-02\TP-02\obj\Debug\TP-02.pdb
+D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\bin\Debug\TP-02.exe.config
+D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\bin\Debug\TP-02.exe
+D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\bin\Debug\TP-02.pdb
+D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\bin\Debug\Entidades.dll
+D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\bin\Debug\Entidades.pdb
+D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\obj\Debug\TP-02.csproj.AssemblyReference.cache
+D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cache
+D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\obj\Debug\TP-02.csproj.CopyComplete
+D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\obj\Debug\TP-02.exe
+D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\obj\Debug\TP-02.pdb
