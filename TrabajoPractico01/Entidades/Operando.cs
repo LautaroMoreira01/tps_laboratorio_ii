@@ -22,7 +22,12 @@ namespace Entidades
         /// <param name="strNumero">Parametro tipo string.</param>
         public Operando(string strNumero)
         {
-            this.numero = ValidaOperando(strNumero);
+            double numero;
+
+            if (double.TryParse(strNumero, out numero))
+            {
+                this.numero = numero;
+            }
         }
         /// <summary>
         /// Constructor con un parametro de entrada que inicializa el operando con el parametro ingresado.
