@@ -51,7 +51,11 @@ namespace Entidades
         /// <param name="taller">Elemento a exponer</param>
         /// <param name="ETipo">Tipos de ítems de la lista a mostrar</param>
         /// <returns></returns>
+<<<<<<< HEAD
         public string Listar(Taller taller, ETipo tipo)
+=======
+        public static string Listar(Taller taller, ETipo tipo)
+>>>>>>> 9d00679307bb6ec71742c12f9ef7182ca0876937
         {
             StringBuilder sb = new StringBuilder();
 

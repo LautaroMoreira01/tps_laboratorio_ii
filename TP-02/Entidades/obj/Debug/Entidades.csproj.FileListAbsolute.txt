@@ -17,3 +17,12 @@ D:\Desktop\TP-02\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
 D:\Desktop\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 D:\Desktop\TP-02\Entidades\obj\Debug\Entidades.dll
 D:\Desktop\TP-02\Entidades\obj\Debug\Entidades.pdb
+<<<<<<< HEAD
+=======
+D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\Entidades\bin\Debug\Entidades.dll
+D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\Entidades\bin\Debug\Entidades.pdb
+D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\Entidades\obj\Debug\Entidades.dll
+D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\Entidades\obj\Debug\Entidades.pdb
+>>>>>>> 9d00679307bb6ec71742c12f9ef7182ca0876937
