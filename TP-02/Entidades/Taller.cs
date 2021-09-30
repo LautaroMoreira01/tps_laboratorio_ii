@@ -9,20 +9,30 @@ namespace Entidades
     /// <summary>
     /// No podrá tener clases heredadas.
     /// </summary>
-    public class Taller
+    public sealed class Taller
     {
         private List<Vehiculo> vehiculos;
         private int espacioDisponible;
+        /// <summary>
+        /// Enumerado de tipos de la clase Taller.
+        /// </summary>
         public enum ETipo
         {
             Ciclomotor, Sedan, SUV, Todos
         }
 
         #region "Constructores"
+        /// <summary>
+        /// Constructor privado de la clase taller que instancia la lista.
+        /// </summary>
         private Taller()
         {
             this.vehiculos = new List<Vehiculo>();
         }
+        /// <summary>
+        /// Constructor de taller que guarda el espacio disponible.
+        /// </summary>
+        /// <param name="espacioDisponible"></param>
         public Taller(int espacioDisponible) : this()
         {
             this.espacioDisponible = espacioDisponible;
@@ -34,11 +44,9 @@ namespace Entidades
         /// Muestro el estacionamiento y TODOS los vehículos
         /// </summary>
         /// <returns></returns>
-
-
         public override string ToString()
         {
-            return Listar(this , ETipo.Todos);
+            return Listar(this, ETipo.Todos);
         }
         #endregion
 
@@ -51,11 +59,8 @@ namespace Entidades
         /// <param name="taller">Elemento a exponer</param>
         /// <param name="ETipo">Tipos de ítems de la lista a mostrar</param>
         /// <returns></returns>
-<<<<<<< HEAD
-        public string Listar(Taller taller, ETipo tipo)
-=======
+
         public static string Listar(Taller taller, ETipo tipo)
->>>>>>> 9d00679307bb6ec71742c12f9ef7182ca0876937
         {
             StringBuilder sb = new StringBuilder();
 
@@ -72,7 +77,7 @@ namespace Entidades
                         }
                         break;
                     case ETipo.Ciclomotor:
-                        if(v is Ciclomotor)
+                        if (v is Ciclomotor)
                         {
                             sb.AppendLine(v.Mostrar());
                         }
@@ -103,16 +108,16 @@ namespace Entidades
         public static Taller operator +(Taller taller, Vehiculo vehiculo)
         {
             bool esta = false;
-            if(taller.vehiculos.Count < taller.espacioDisponible)
+            if (taller.vehiculos.Count < taller.espacioDisponible)
             {
                 foreach (Vehiculo v in taller.vehiculos)
                 {
-                    if(v == vehiculo)
+                    if (v == vehiculo)
                     {
                         esta = true;
                     }
                 }
-                if(!esta)
+                if (!esta)
                 {
                     taller.vehiculos.Add(vehiculo);
                 }
@@ -136,7 +141,7 @@ namespace Entidades
                     taller.vehiculos.RemoveAt(i);
                 }
             }
- 
+
             return taller;
         }
         #endregion

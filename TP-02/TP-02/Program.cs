@@ -16,7 +16,7 @@ namespace TP_02_2018
             Console.SetWindowSize(Console.LargestWindowWidth / 2, Console.LargestWindowHeight - 2);
 
             // Nombre del alumno
-            Console.Title = "Lautaro Moreira";
+            Console.Title = "Lautaro Moreira 2D";
 
             Taller taller = new Taller(6);
 
@@ -58,37 +58,22 @@ namespace TP_02_2018
             taller += c2;
 
             // Muestro solo Moto
-<<<<<<< HEAD
-            Console.WriteLine(taller.Listar(taller, Taller.ETipo.Ciclomotor));
-=======
+
             Console.WriteLine(Taller.Listar(taller, Taller.ETipo.Ciclomotor));
->>>>>>> 9d00679307bb6ec71742c12f9ef7182ca0876937
             Console.WriteLine("<-----------PRESIONE UNA TECLA PARA CONTINUAR----------->");
             Console.ReadKey();
             Console.Clear();
 
             // Muestro solo Automovil
-<<<<<<< HEAD
-            Console.WriteLine(taller.Listar(taller, Taller.ETipo.Sedan));
-=======
             Console.WriteLine(Taller.Listar(taller, Taller.ETipo.Sedan));
->>>>>>> 9d00679307bb6ec71742c12f9ef7182ca0876937
             Console.WriteLine("<-----------PRESIONE UNA TECLA PARA CONTINUAR----------->");
             Console.ReadKey();
             Console.Clear();
 
             // Muestro solo Camioneta
-<<<<<<< HEAD
-            Console.WriteLine(taller.Listar(taller, Taller.ETipo.SUV));
-=======
             Console.WriteLine(Taller.Listar(taller, Taller.ETipo.SUV));
->>>>>>> 9d00679307bb6ec71742c12f9ef7182ca0876937
             Console.WriteLine("<-------------PRESIONE UNA TECLA PARA SALIR------------->");
             Console.ReadKey();
         }
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 9d00679307bb6ec71742c12f9ef7182ca0876937

@@ -11,11 +11,16 @@ namespace Entidades
     /// </summary>
     public abstract class Vehiculo
     {
-        
+        /// <summary>
+        /// Enumerado con marcas de la clase Vehiculo.
+        /// </summary>
         public enum EMarca
         {
             Chevrolet, Ford, Renault, Toyota, BMW, Honda, HarleyDavidson
         }
+        /// <summary>
+        /// Enumerado con tamaños de la clase Vehiculo.
+        /// </summary>
         public enum ETamanio
         {
             Chico, Mediano, Grande
@@ -23,9 +28,14 @@ namespace Entidades
         private EMarca marca;
         private string chasis;
         private ConsoleColor color;
-       // private ETamanio tamanio;
-
-        public Vehiculo( string chasis, EMarca marca, ConsoleColor color)
+        
+        /// <summary>
+        /// Constructor de la clase Vehiculo.
+        /// </summary>
+        /// <param name="chasis"></param>
+        /// <param name="marca"></param>
+        /// <param name="color"></param>
+        public Vehiculo(string chasis, EMarca marca, ConsoleColor color)
         {
             this.marca = marca;
             this.chasis = chasis;
@@ -35,7 +45,7 @@ namespace Entidades
         /// <summary>
         /// ReadOnly: Retornará el tamaño
         /// </summary>
-        protected abstract ETamanio Tamanio { get;}
+        protected abstract ETamanio Tamanio { get; }
 
         /// <summary>
         /// Publica todos los datos del Vehiculo.
@@ -45,7 +55,10 @@ namespace Entidades
         {
             return (string)this;
         }
-
+        /// <summary>
+        /// Sobrecarga explicita de string que al castear un vehiculo a string te devuelve todos los datos.
+        /// </summary>
+        /// <param name="p"></param>
         public static explicit operator string(Vehiculo p)
         {
             StringBuilder sb = new StringBuilder();
@@ -54,7 +67,7 @@ namespace Entidades
             sb.Append($"MARCA : {p.marca.ToString()}\r\n");
             sb.Append($"COLOR : { p.color.ToString()}\r\n");
             sb.AppendLine("---------------------");
-            sb.AppendLine($"TAMAÑO : {p.Tamanio}"); 
+            sb.AppendLine($"TAMAÑO : {p.Tamanio}");
 
             return sb.ToString();
         }

@@ -10,6 +10,9 @@ namespace Entidades
 {
     public class Sedan : Vehiculo
     {
+        /// <summary>
+        /// Enumerado de Sedan que contiene los tipos.
+        /// </summary>
         public enum ETipo { CuatroPuertas, CincoPuertas }
         ETipo tipo;
 
@@ -19,17 +22,20 @@ namespace Entidades
         /// <param name="marca"></param>
         /// <param name="chasis"></param>
         /// <param name="color"></param>
-        public Sedan(EMarca marca, string chasis, ConsoleColor color) :this(marca , chasis , color , ETipo.CuatroPuertas)   
+        public Sedan(EMarca marca, string chasis, ConsoleColor color) : this(marca, chasis, color, ETipo.CuatroPuertas)
         {
         }
 
-        public Sedan(EMarca marca, string chasis, ConsoleColor color,ETipo tipo) : base( chasis, marca, color)
+        /// <summary>
+        /// Constructor de Sedam.
+        /// </summary>
+        public Sedan(EMarca marca, string chasis, ConsoleColor color, ETipo tipo) : base(chasis, marca, color)
         {
             this.tipo = tipo;
         }
 
         /// <summary>
-        /// Sedan son 'Mediano'
+        /// Propiedad de sedan que devuelve el tamanio que es mediano.
         /// </summary>
         protected override ETamanio Tamanio
         {
@@ -38,7 +44,10 @@ namespace Entidades
                 return ETamanio.Mediano;
             }
         }
-
+        /// <summary>
+        /// Sobrescritura del metodo Mostrar que devuelve los datos del objeto.
+        /// </summary>
+        /// <returns>Devuelve los datos del sedan en tipo string</returns>
         public override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();

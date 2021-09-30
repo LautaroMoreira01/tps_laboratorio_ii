@@ -21,26 +21,3 @@ D:\Federico\VB .Net\Visual C#\utn\TPs\2018\TP-02\TP-02\obj\Debug\TP-02.csprojRes
 D:\Federico\VB .Net\Visual C#\utn\TPs\2018\TP-N2\TP-02\TP-02\obj\Debug\TP-02.csprojAssemblyReference.cache
 D:\Federico\VB .Net\Visual C#\utn\TPs\2018\TP-N2\TP-02\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cache
 D:\Federico\VB .Net\Visual C#\utn\TPs\2018\TP-N2\TP-02\TP-02\obj\Debug\TP-02.exe
-D:\Desktop\TP-02\TP-02\obj\Debug\TP-02.csproj.AssemblyReference.cache
-D:\Desktop\TP-02\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cache
-D:\Desktop\TP-02\TP-02\obj\Debug\TP-02.exe
-D:\Desktop\TP-02\TP-02\bin\Debug\TP-02.exe.config
-D:\Desktop\TP-02\TP-02\bin\Debug\TP-02.exe
-D:\Desktop\TP-02\TP-02\bin\Debug\TP-02.pdb
-D:\Desktop\TP-02\TP-02\bin\Debug\Entidades.dll
-D:\Desktop\TP-02\TP-02\bin\Debug\Entidades.pdb
-D:\Desktop\TP-02\TP-02\obj\Debug\TP-02.csproj.CopyComplete
-D:\Desktop\TP-02\TP-02\obj\Debug\TP-02.pdb
-<<<<<<< HEAD
-=======
-D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\bin\Debug\TP-02.exe.config
-D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\bin\Debug\TP-02.exe
-D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\bin\Debug\TP-02.pdb
-D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\bin\Debug\Entidades.dll
-D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\bin\Debug\Entidades.pdb
-D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\obj\Debug\TP-02.csproj.AssemblyReference.cache
-D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cache
-D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\obj\Debug\TP-02.csproj.CopyComplete
-D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\obj\Debug\TP-02.exe
-D:\Desktop\programacion II segundo recursada\TrabajosPracticos\tps_laboratorio_ii\TP-02\TP-02\obj\Debug\TP-02.pdb
->>>>>>> 9d00679307bb6ec71742c12f9ef7182ca0876937
