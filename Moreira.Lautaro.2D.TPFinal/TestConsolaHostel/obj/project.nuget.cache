@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "5tXfj0hgdN7bWENBY+NEV3smQy6/TIBSpkjpxNW8qcrL69Q3UybK9BJCguBV5dhs0lfwGSPtiJnFrtDt7Z1ljQ==",
+  "success": true,
+  "projectFilePath": "D:\\Desktop\\Lautaro\\clasesProgramacionII\\Tp3\\Moreira.Lautaro.2D.TPFinal\\TestConsolaHostel\\TestConsolaHostel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lauty\\.nuget\\packages\\system.text.json\\5.0.2\\system.text.json.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
