@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z3ZH7we/6cUqsADXddpMeUnxzOdrxYZFddkC2kiRRc5WOnMr8OwEX4qLyH5EwJejk9tsStX0C6OBnOGyiAPdHA==",
+  "dgSpecHash": "AsUaUTQRT9OvN+H078bWtbeduZHHe1dcqnixkt73Buw3VdSD4T54smvf6LJhQ7k3gFll/rNtZo+9iEc8Amn/kg==",
   "success": true,
-  "projectFilePath": "D:\\Desktop\\Lautaro\\clasesProgramacionII\\Tp3\\Moreira.Lautaro.2D.TPFinal\\TestEntidadesHostel\\TestEntidadesHostel.csproj",
+  "projectFilePath": "D:\\Desktop\\tps_laboratorio_ii\\Moreira.Lautaro.2D.TPFinal\\TestEntidadesHostel\\TestEntidadesHostel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lauty\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\lauty\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",

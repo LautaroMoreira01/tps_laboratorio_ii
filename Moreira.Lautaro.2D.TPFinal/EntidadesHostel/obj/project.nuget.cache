@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EAlM7tah4IhGCpLn06gZ1efvIGFlf9Z9TysXA6uAtj8rJFYGj1z2poDI92XB56RCu0065qqhKBx+3OeK6Z8efg==",
+  "dgSpecHash": "sZ0UhWymyLKeYRIbH4T/0IxAxqC+Z7lrB1LxI+f+sr+QHYYZ34YpDK/2VhQ/GPuHHqdu38pqSaEQsF/O9Nmv5g==",
   "success": true,
-  "projectFilePath": "D:\\Desktop\\Lautaro\\clasesProgramacionII\\Tp3\\Moreira.Lautaro.2D.TPFinal\\EntidadesHostel\\EntidadesHostel.csproj",
+  "projectFilePath": "D:\\Desktop\\tps_laboratorio_ii\\Moreira.Lautaro.2D.TPFinal\\EntidadesHostel\\EntidadesHostel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lauty\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\lauty\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",

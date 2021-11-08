@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L4JzG4XWoIk/wpTxTrF1HqjQnUkVS7LOObbIHSFTF4tthKZKQDNssmw66UP4VHzMDD2AUEn9SWe69b/9Emd7vA==",
+  "dgSpecHash": "O3ZR1dsXkTeGby/mpLvG/S17tCt2afFyX4YEF/9xHWiZIIWZYRkRKZctCb1mBLBAyFbjjlsqeYcKYsjWBa+8kQ==",
   "success": true,
-  "projectFilePath": "D:\\Desktop\\Lautaro\\clasesProgramacionII\\Tp3\\Moreira.Lautaro.2D.TPFinal\\Vista\\VistaHostel.csproj",
+  "projectFilePath": "D:\\Desktop\\tps_laboratorio_ii\\Moreira.Lautaro.2D.TPFinal\\Vista\\VistaHostel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lauty\\.nuget\\packages\\system.text.json\\5.0.2\\system.text.json.5.0.2.nupkg.sha512"
   ],
