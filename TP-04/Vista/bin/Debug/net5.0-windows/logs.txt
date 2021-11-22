@@ -1,0 +1,60 @@
+
+------------------------------
+Fecha y hora:
+8/11/2021 00:46:18
+Tipo de exepcion:
+System.IO.DirectoryNotFoundException: El directorio no fue encontrado.
+   at EntidadesHostel.Xml`1.Serializar(String ruta, T objeto) in D:\Desktop\Lautaro\clasesProgramacionII\Tp3\Moreira.Lautaro.2D.TPFinal\EntidadesHostel\Serializacion\Xml.cs:line 37
+   at Vista.FrmMain.GuardarEmpleados(String path) in D:\Desktop\Lautaro\clasesProgramacionII\Tp3\Moreira.Lautaro.2D.TPFinal\Vista\FrmMain.cs:line 308
+Error:
+System.IO.DirectoryNotFoundException: El directorio no fue encontrado.
+   at EntidadesHostel.Xml`1.Serializar(String ruta, T objeto) in D:\Desktop\Lautaro\clasesProgramacionII\Tp3\Moreira.Lautaro.2D.TPFinal\EntidadesHostel\Serializacion\Xml.cs:line 37
+   at Vista.FrmMain.GuardarEmpleados(String path) in D:\Desktop\Lautaro\clasesProgramacionII\Tp3\Moreira.Lautaro.2D.TPFinal\Vista\FrmMain.cs:line 308
+stack trace:
+   at EntidadesHostel.Xml`1.Serializar(String ruta, T objeto) in D:\Desktop\Lautaro\clasesProgramacionII\Tp3\Moreira.Lautaro.2D.TPFinal\EntidadesHostel\Serializacion\Xml.cs:line 37
+   at Vista.FrmMain.GuardarEmpleados(String path) in D:\Desktop\Lautaro\clasesProgramacionII\Tp3\Moreira.Lautaro.2D.TPFinal\Vista\FrmMain.cs:line 308
+
+------------------------------
+Fecha y hora:
+8/11/2021 00:53:18
+Tipo de exepcion:
+System.IO.DirectoryNotFoundException: El directorio no fue encontrado.
+   at EntidadesHostel.Xml`1.Serializar(String ruta, T objeto) in D:\Desktop\Lautaro\clasesProgramacionII\Tp3\Moreira.Lautaro.2D.TPFinal\EntidadesHostel\Serializacion\Xml.cs:line 37
+   at Vista.FrmMain.GuardarEmpleados(String path) in D:\Desktop\Lautaro\clasesProgramacionII\Tp3\Moreira.Lautaro.2D.TPFinal\Vista\FrmMain.cs:line 308
+Error:
+System.IO.DirectoryNotFoundException: El directorio no fue encontrado.
+   at EntidadesHostel.Xml`1.Serializar(String ruta, T objeto) in D:\Desktop\Lautaro\clasesProgramacionII\Tp3\Moreira.Lautaro.2D.TPFinal\EntidadesHostel\Serializacion\Xml.cs:line 37
+   at Vista.FrmMain.GuardarEmpleados(String path) in D:\Desktop\Lautaro\clasesProgramacionII\Tp3\Moreira.Lautaro.2D.TPFinal\Vista\FrmMain.cs:line 308
+stack trace:
+   at EntidadesHostel.Xml`1.Serializar(String ruta, T objeto) in D:\Desktop\Lautaro\clasesProgramacionII\Tp3\Moreira.Lautaro.2D.TPFinal\EntidadesHostel\Serializacion\Xml.cs:line 37
+   at Vista.FrmMain.GuardarEmpleados(String path) in D:\Desktop\Lautaro\clasesProgramacionII\Tp3\Moreira.Lautaro.2D.TPFinal\Vista\FrmMain.cs:line 308
+
+------------------------------
+Fecha y hora:
+22/11/2021 01:02:00
+Tipo de exepcion:
+EntidadesHostel.PersonaException: La persona a eliminar no se encuentra en la lista.
+   at EntidadesHostel.Personas`1.op_Subtraction(Personas`1 personas, T personita) in D:\Desktop\Lautaro\tps_laboratorio_ii\TP-04\EntidadesHostel\Generics\Personas.cs:line 85
+   at Vista.FrmMain.EliminarCliente() in D:\Desktop\Lautaro\tps_laboratorio_ii\TP-04\Vista\FrmMain.cs:line 444
+Error:
+EntidadesHostel.PersonaException: La persona a eliminar no se encuentra en la lista.
+   at EntidadesHostel.Personas`1.op_Subtraction(Personas`1 personas, T personita) in D:\Desktop\Lautaro\tps_laboratorio_ii\TP-04\EntidadesHostel\Generics\Personas.cs:line 85
+   at Vista.FrmMain.EliminarCliente() in D:\Desktop\Lautaro\tps_laboratorio_ii\TP-04\Vista\FrmMain.cs:line 444
+stack trace:
+   at EntidadesHostel.Personas`1.op_Subtraction(Personas`1 personas, T personita) in D:\Desktop\Lautaro\tps_laboratorio_ii\TP-04\EntidadesHostel\Generics\Personas.cs:line 85
+   at Vista.FrmMain.EliminarCliente() in D:\Desktop\Lautaro\tps_laboratorio_ii\TP-04\Vista\FrmMain.cs:line 444
+
+------------------------------
+Fecha y hora:
+22/11/2021 01:24:50
+Tipo de exepcion:
+EntidadesHostel.PersonaException: La persona a eliminar no se encuentra en la lista.
+   at EntidadesHostel.Personas`1.op_Subtraction(Personas`1 personas, T personita) in D:\Desktop\Lautaro\tps_laboratorio_ii\TP-04\EntidadesHostel\Generics\Personas.cs:line 85
+   at Vista.FrmMain.EliminarCliente() in D:\Desktop\Lautaro\tps_laboratorio_ii\TP-04\Vista\FrmMain.cs:line 442
+Error:
+EntidadesHostel.PersonaException: La persona a eliminar no se encuentra en la lista.
+   at EntidadesHostel.Personas`1.op_Subtraction(Personas`1 personas, T personita) in D:\Desktop\Lautaro\tps_laboratorio_ii\TP-04\EntidadesHostel\Generics\Personas.cs:line 85
+   at Vista.FrmMain.EliminarCliente() in D:\Desktop\Lautaro\tps_laboratorio_ii\TP-04\Vista\FrmMain.cs:line 442
+stack trace:
+   at EntidadesHostel.Personas`1.op_Subtraction(Personas`1 personas, T personita) in D:\Desktop\Lautaro\tps_laboratorio_ii\TP-04\EntidadesHostel\Generics\Personas.cs:line 85
+   at Vista.FrmMain.EliminarCliente() in D:\Desktop\Lautaro\tps_laboratorio_ii\TP-04\Vista\FrmMain.cs:line 442
