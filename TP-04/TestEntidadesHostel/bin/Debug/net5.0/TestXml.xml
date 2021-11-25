@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Cliente xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Nombre>Lautaro</Nombre>
-  <Apellido>Moreira</Apellido>
-  <Edad>20</Edad>
-  <Dni>23145789</Dni>
-  <Sexo>Masculino</Sexo>
-</Cliente>
