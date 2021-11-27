@@ -17,7 +17,6 @@ namespace EntidadesHostel
             capacidadMaxima = 1000000000;
             lista = new List<T>();
         }
-
         /// <summary>
         /// Constructor de la clase personas que recibe la capacidad maxima de la lista
         /// </summary>

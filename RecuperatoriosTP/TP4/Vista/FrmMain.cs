@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,7 +9,7 @@ using VistaHostel;
 
 namespace Vista
 {
-    
+
     public partial class FrmMain : Form
     {
         private Hostel hostel;
@@ -158,9 +154,8 @@ namespace Vista
 
                 MessageBox.Show("Debe seleccionar un empleado para modificarlo.");
             }
-           
-
         }
+
 
         /// <summary>
         /// Elimina el empleado seleccionado
@@ -381,6 +376,7 @@ namespace Vista
         private void EliminarCliente()
         {
             Cliente clienteAEliminar;
+
             if (dgvPersonas.SelectedRows.Count > 0)
             {
                 try
@@ -392,19 +388,16 @@ namespace Vista
 
                     if (dialogResult == DialogResult.Yes && hostel.Clientes - clienteAEliminar)
                     {
+
                         hostel.HistorialClientes.Lista.Add(clienteAEliminar);
                         MessageBox.Show("Cliente eliminado.", "Cliente eliminado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
                         Task.Run(() => Encuestar(clienteAEliminar));
 
                     }
-
+                
                     ActualizarDGVCliente(hostel.Clientes);
-                }
-                catch (PersonaException ex)
-                {
-                    Log.Guardar(ex);
-                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                
                 }
                 catch (Exception ex)
                 {
@@ -419,17 +412,16 @@ namespace Vista
             }
         }
 
-        //Preguntar esto
+
         /// <summary>
         /// Encuesta al cliente pasado por parametro y notifica los resultados a partir de un evento
         /// </summary>
         /// <param name="cliente">cliente a encuestar</param>
         private void Encuestar(Cliente cliente)
         {
-            cliente.notificarClienteEncuestado += NotificarClienteEncuestado ;
+            cliente.clienteEncuestado += NotificarClienteEncuestado ;
 
             cliente.EncuestarCliente();
-
         }
 
         /// <summary>
@@ -439,6 +431,7 @@ namespace Vista
         private void NotificarClienteEncuestado(Cliente cliente)
         {
             StringBuilder sb = new StringBuilder();
+
             sb.AppendLine($"El cliente {cliente.ToString()} fue encuestado antes de salir.");
             sb.AppendLine(cliente.MostrarResultadosEncuesta());
             

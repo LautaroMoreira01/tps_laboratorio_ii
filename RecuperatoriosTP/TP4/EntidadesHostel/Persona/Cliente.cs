@@ -1,17 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using System.Xml.Serialization;
+
+
 namespace EntidadesHostel
 {
 
-    public delegate void DelegadoEncuestarCliente(Cliente cliente);
+    public delegate void DelegadoCliente(Cliente cliente);
 
     public class Cliente : Persona
     {
-        public event DelegadoEncuestarCliente notificarClienteEncuestado;
-
+        public event DelegadoCliente clienteEncuestado;
         private int puntuacionDelServicio;
         private bool volverianAVenir;
         
@@ -59,9 +56,9 @@ namespace EntidadesHostel
                 VolveriaAVenir = false;
             }
 
-            if(!(notificarClienteEncuestado is null))//PREGUNTAR ESTO SI ESTA BIEN
+            if(!(clienteEncuestado is null))
             {
-                notificarClienteEncuestado.Invoke(this);
+                clienteEncuestado.Invoke(this);
             }
         }
 
