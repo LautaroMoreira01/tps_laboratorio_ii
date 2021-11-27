@@ -568,3 +568,93 @@ System.IO.FileNotFoundException: El archivo no fue encontrado.
 stack trace:
    at EntidadesHostel.Xml`1.Deserializar(String ruta) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Serializacion\Xml.cs:line 62
    at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 316
+
+------------------------------
+Fecha y hora:
+27/11/2021 01:27:54
+Tipo de exepcion:
+EntidadesHostel.PersonaException: No es posible agregar la persona porque la lista ya se encuentra llena.
+   at EntidadesHostel.Personas`1.op_Addition(Personas`1 personas, T personita) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Personas.cs:line 63
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 143
+Error:
+EntidadesHostel.PersonaException: No es posible agregar la persona porque la lista ya se encuentra llena.
+   at EntidadesHostel.Personas`1.op_Addition(Personas`1 personas, T personita) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Personas.cs:line 63
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 143
+stack trace:
+   at EntidadesHostel.Personas`1.op_Addition(Personas`1 personas, T personita) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Personas.cs:line 63
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 143
+
+------------------------------
+Fecha y hora:
+27/11/2021 01:27:54
+Tipo de exepcion:
+EntidadesHostel.PersonaException: No es posible agregar la persona porque la persona ya se encuentra en la lista.
+   at EntidadesHostel.Personas`1.op_Addition(Personas`1 personas, T personita) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Personas.cs:line 59
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 203
+Error:
+EntidadesHostel.PersonaException: No es posible agregar la persona porque la persona ya se encuentra en la lista.
+   at EntidadesHostel.Personas`1.op_Addition(Personas`1 personas, T personita) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Personas.cs:line 59
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 203
+stack trace:
+   at EntidadesHostel.Personas`1.op_Addition(Personas`1 personas, T personita) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Personas.cs:line 59
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 203
+
+------------------------------
+Fecha y hora:
+27/11/2021 01:27:55
+Tipo de exepcion:
+System.IO.FileNotFoundException: El archivo no fue encontrado.
+   at EntidadesHostel.Xml`1.Deserializar(String ruta) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Serializacion\Xml.cs:line 62
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 322
+Error:
+System.IO.FileNotFoundException: El archivo no fue encontrado.
+   at EntidadesHostel.Xml`1.Deserializar(String ruta) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Serializacion\Xml.cs:line 62
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 322
+stack trace:
+   at EntidadesHostel.Xml`1.Deserializar(String ruta) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Serializacion\Xml.cs:line 62
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 322
+
+------------------------------
+Fecha y hora:
+27/11/2021 01:28:28
+Tipo de exepcion:
+EntidadesHostel.PersonaException: No es posible agregar la persona porque la lista ya se encuentra llena.
+   at EntidadesHostel.Personas`1.op_Addition(Personas`1 personas, T personita) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Personas.cs:line 63
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 143
+Error:
+EntidadesHostel.PersonaException: No es posible agregar la persona porque la lista ya se encuentra llena.
+   at EntidadesHostel.Personas`1.op_Addition(Personas`1 personas, T personita) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Personas.cs:line 63
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 143
+stack trace:
+   at EntidadesHostel.Personas`1.op_Addition(Personas`1 personas, T personita) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Personas.cs:line 63
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 143
+
+------------------------------
+Fecha y hora:
+27/11/2021 01:28:28
+Tipo de exepcion:
+EntidadesHostel.PersonaException: No es posible agregar la persona porque la persona ya se encuentra en la lista.
+   at EntidadesHostel.Personas`1.op_Addition(Personas`1 personas, T personita) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Personas.cs:line 59
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 203
+Error:
+EntidadesHostel.PersonaException: No es posible agregar la persona porque la persona ya se encuentra en la lista.
+   at EntidadesHostel.Personas`1.op_Addition(Personas`1 personas, T personita) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Personas.cs:line 59
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 203
+stack trace:
+   at EntidadesHostel.Personas`1.op_Addition(Personas`1 personas, T personita) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Personas.cs:line 59
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 203
+
+------------------------------
+Fecha y hora:
+27/11/2021 01:28:28
+Tipo de exepcion:
+System.IO.FileNotFoundException: El archivo no fue encontrado.
+   at EntidadesHostel.Xml`1.Deserializar(String ruta) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Serializacion\Xml.cs:line 62
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 322
+Error:
+System.IO.FileNotFoundException: El archivo no fue encontrado.
+   at EntidadesHostel.Xml`1.Deserializar(String ruta) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Serializacion\Xml.cs:line 62
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 322
+stack trace:
+   at EntidadesHostel.Xml`1.Deserializar(String ruta) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Serializacion\Xml.cs:line 62
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 322

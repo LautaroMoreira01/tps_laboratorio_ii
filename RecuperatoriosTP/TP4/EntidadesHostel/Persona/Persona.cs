@@ -14,7 +14,6 @@ namespace EntidadesHostel
         private string nombre;
         private string apellido;
         private long dni;
-        private int edad;
         private DateTime fechaNacimiento;
         private ESexo sexo;
 
@@ -94,6 +93,32 @@ namespace EntidadesHostel
         public static bool operator !=(Persona p1 , Persona p2)
         {
             return !(p1 == p2);
+        }
+
+        /// <summary>
+        /// Sobrecarga del metodo equals que compara dos objetos de tipo Persona
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns>True si los el objeto pasado por paramtro no es null, los tipos son iguales y las edades tambien. Caso contrario false</returns>
+        public override bool Equals(object obj)
+        {
+            if (!(obj is null) && obj.GetType() == GetType() && ((Persona)obj).Edad == this.Edad)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        
+        /// <summary>
+        /// Sobrecarga del metodo gethashcode que retorna el hashcode del atributo dni
+        /// </summary>
+        /// <returns>hashcode del dni</returns>
+        public override int GetHashCode()
+        {
+            return dni.GetHashCode();  
         }
 
         /// <summary>

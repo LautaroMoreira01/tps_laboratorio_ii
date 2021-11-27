@@ -75,7 +75,7 @@ namespace EntidadesHostel
         /// <exception cref="PersonaException">Si la persona no se encuentra en la lista</exception>
         public static bool operator -(Personas<T> personas, T personita)
         {
-            bool result = false;
+            bool result;
             if (personas == personita)
             {
                 personas.lista.Remove(personita);

@@ -61,6 +61,8 @@ namespace TestConsolaHostel
 
             string pathlogs = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Logs/");
 
+            Console.WriteLine($"h1 {h1.GetHashCode()}");
+
             try
             {
 

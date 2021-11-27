@@ -154,5 +154,32 @@ namespace EntidadesHostel
                 return 0;
             }
         }
+
+
+        /// <summary>
+        /// Sobrecarga del metodo equals que compara dos objetos de tipo habitacion
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns>True si los el objeto pasado por paramtro no es null, los tipos son iguales y los numeros de habitacion tambien. Caso contrario false</returns>
+        public override bool Equals(object obj)
+        {
+            if (!(obj is null) && obj.GetType() == GetType() && ((Habitacion)obj).NumeroDeHabitacion == this.NumeroDeHabitacion)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Sobrecarga del metodo gethashcode que retorna el hashcode del atributo numero habitacion
+        /// </summary>
+        /// <returns>hashcode del numero de habitacion</returns>
+        public override int GetHashCode()
+        {
+            return NumeroDeHabitacion.GetHashCode();
+        }
     }
 }
