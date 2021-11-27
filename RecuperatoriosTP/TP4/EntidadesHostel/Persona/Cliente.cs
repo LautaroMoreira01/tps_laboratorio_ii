@@ -6,9 +6,11 @@ using System.Xml.Serialization;
 namespace EntidadesHostel
 {
 
+    public delegate void DelegadoEncuestarCliente(Cliente cliente);
 
     public class Cliente : Persona
     {
+        public event DelegadoEncuestarCliente notificarClienteEncuestado;
 
         private int puntuacionDelServicio;
         private bool volverianAVenir;
@@ -41,6 +43,28 @@ namespace EntidadesHostel
         {
             return $"Puntuacion del servicio: {puntuacionDelServicio:00.00}\n Volveria a venir? {VolveriaAVenir}";
         }
+
+        public void EncuestarCliente()
+        {
+            Random random = new Random();
+            PuntuacionDelServicio = random.Next(0, 6);
+            int volverianAVenir = random.Next(0, 2);
+
+            if (volverianAVenir == 1)
+            {
+                VolveriaAVenir = true;
+            }
+            else
+            {
+                VolveriaAVenir = false;
+            }
+
+            if(!(notificarClienteEncuestado is null))//PREGUNTAR ESTO SI ESTA BIEN
+            {
+                notificarClienteEncuestado.Invoke(this);
+            }
+        }
+
 
         /// <summary>
         /// Propiedad que asigna y retorna los datos de la puntuacion del servicio

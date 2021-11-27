@@ -51,7 +51,7 @@ namespace EntidadesHostel
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"Nombre: {nombre}"); 
             sb.AppendLine($"Apellido: {apellido}"); 
-            sb.AppendLine($"Fecha de nacimiento: {fechaNacimiento:DD:MM:yyy}"); 
+            sb.AppendLine($"Fecha de nacimiento: {fechaNacimiento:dd/MM/yyy}"); 
             sb.AppendLine($"Edad: {Edad}"); 
             sb.AppendLine($"DNI: {dni}"); 
             sb.AppendLine($"Sexo: {sexo}"); 

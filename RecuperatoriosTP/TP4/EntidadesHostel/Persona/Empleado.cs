@@ -26,7 +26,7 @@ namespace EntidadesHostel
         /// <param name="nombre">Nombre el empleado</param>
         /// <param name="apellido">Apellido el empleado</param>
         /// <param name="dni">Dni el empleado</param>
-        /// <param name="edad">Edad del empleado</param>
+        /// <param name="fechaDeNacimiento">Fecha de nacimiento del empleado</param>
         /// <param name="sexo">Sexo del empleado</param>
         /// <param name="puesto">Puesto del empleado</param>
         /// <param name="salario">Salario del empleado</param>

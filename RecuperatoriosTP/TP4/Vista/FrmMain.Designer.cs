@@ -41,6 +41,7 @@
             this.btnEliminarCliente = new System.Windows.Forms.Button();
             this.btnLogs = new System.Windows.Forms.Button();
             this.dgvPersonas = new System.Windows.Forms.DataGridView();
+            this.btnHistorialClientes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -188,11 +189,23 @@
             this.dgvPersonas.Size = new System.Drawing.Size(535, 615);
             this.dgvPersonas.TabIndex = 16;
             // 
+            // btnHistorialClientes
+            // 
+            this.btnHistorialClientes.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnHistorialClientes.Location = new System.Drawing.Point(555, 67);
+            this.btnHistorialClientes.Name = "btnHistorialClientes";
+            this.btnHistorialClientes.Size = new System.Drawing.Size(193, 63);
+            this.btnHistorialClientes.TabIndex = 17;
+            this.btnHistorialClientes.Text = "Historial clientes";
+            this.btnHistorialClientes.UseVisualStyleBackColor = true;
+            this.btnHistorialClientes.Click += new System.EventHandler(this.btnHistorialClientes_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(760, 765);
+            this.Controls.Add(this.btnHistorialClientes);
             this.Controls.Add(this.dgvPersonas);
             this.Controls.Add(this.btnLogs);
             this.Controls.Add(this.btnEliminarCliente);
@@ -234,5 +247,6 @@
         private System.Windows.Forms.Button btnEliminarCliente;
         private System.Windows.Forms.Button btnLogs;
         private System.Windows.Forms.DataGridView dgvPersonas;
+        private System.Windows.Forms.Button btnHistorialClientes;
     }
 }

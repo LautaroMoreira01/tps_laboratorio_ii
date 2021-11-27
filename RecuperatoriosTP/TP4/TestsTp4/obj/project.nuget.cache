@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M8p8H5FL1md54IvuPBL/q4EplmL86tby3JISCK8c/7qN7Ztgzo4F+MhC4LCZAJxuZIL/qe/D7TaVjgVEFniG5g==",
+  "dgSpecHash": "uNpPdTNAEXKBM0BOuGUrXpPLaw4sJaXeI4F5cWUa2EGNtEZfZTwyRNx4E1rI6XB7J4PJDqpQtLkpzQun633xtQ==",
   "success": true,
-  "projectFilePath": "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\TP-04\\TestsTp4\\TestsTp4.csproj",
+  "projectFilePath": "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\TestsTp4\\TestsTp4.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lauty\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\lauty\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",

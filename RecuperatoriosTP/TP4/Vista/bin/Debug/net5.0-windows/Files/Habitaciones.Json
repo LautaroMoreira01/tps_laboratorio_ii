@@ -8,11 +8,14 @@
       "CantidadDeMujeres": 0,
       "Lista": [
         {
+          "PuntuacionDelServicio": 0,
+          "VolveriaAVenir": false,
           "Nombre": "Lautaro",
           "Apellido": "Moreira",
-          "Edad": 20,
+          "Edad": 2020,
           "Dni": 44245787,
-          "Sexo": 0
+          "Sexo": 0,
+          "FechaNacimiento": "0001-01-01T00:00:00"
         }
       ],
       "CapacidadMaxima": 4

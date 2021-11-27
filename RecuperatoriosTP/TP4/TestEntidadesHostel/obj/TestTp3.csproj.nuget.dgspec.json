@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\TestsTp4\\TestsTp4.csproj": {}
+    "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\TestEntidadesHostel\\TestTp3.csproj": {}
   },
   "projects": {
     "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\EntidadesHostel\\EntidadesHostel.csproj": {
@@ -72,14 +72,14 @@
         }
       }
     },
-    "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\TestsTp4\\TestsTp4.csproj": {
+    "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\TestEntidadesHostel\\TestTp3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\TestsTp4\\TestsTp4.csproj",
-        "projectName": "TestsTp4",
-        "projectPath": "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\TestsTp4\\TestsTp4.csproj",
+        "projectUniqueName": "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\TestEntidadesHostel\\TestTp3.csproj",
+        "projectName": "TestTp3",
+        "projectPath": "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\TestEntidadesHostel\\TestTp3.csproj",
         "packagesPath": "C:\\Users\\lauty\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\TestsTp4\\obj\\",
+        "outputPath": "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\TestEntidadesHostel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

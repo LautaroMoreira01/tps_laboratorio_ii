@@ -58,3 +58,33 @@ EntidadesHostel.PersonaException: La persona a eliminar no se encuentra en la li
 stack trace:
    at EntidadesHostel.Personas`1.op_Subtraction(Personas`1 personas, T personita) in D:\Desktop\Lautaro\tps_laboratorio_ii\TP-04\EntidadesHostel\Generics\Personas.cs:line 85
    at Vista.FrmMain.EliminarCliente() in D:\Desktop\Lautaro\tps_laboratorio_ii\TP-04\Vista\FrmMain.cs:line 442
+
+------------------------------
+Fecha y hora:
+25/11/2021 15:09:35
+Tipo de exepcion:
+System.IO.FileNotFoundException: El archivo no fue encontrado.
+   at EntidadesHostel.Xml`1.Deserializar(String ruta) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Serializacion\Xml.cs:line 62
+   at Vista.FrmMain.CargarClientes(String path) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\FrmMain.cs:line 408
+Error:
+System.IO.FileNotFoundException: El archivo no fue encontrado.
+   at EntidadesHostel.Xml`1.Deserializar(String ruta) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Serializacion\Xml.cs:line 62
+   at Vista.FrmMain.CargarClientes(String path) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\FrmMain.cs:line 408
+stack trace:
+   at EntidadesHostel.Xml`1.Deserializar(String ruta) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Serializacion\Xml.cs:line 62
+   at Vista.FrmMain.CargarClientes(String path) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\FrmMain.cs:line 408
+
+------------------------------
+Fecha y hora:
+25/11/2021 16:11:23
+Tipo de exepcion:
+System.IO.FileNotFoundException: El archivo no fue encontrado.
+   at EntidadesHostel.Xml`1.Deserializar(String ruta) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Serializacion\Xml.cs:line 62
+   at Vista.FrmMain.CargarHistorialClientes(String path) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\FrmMain.cs:line 457
+Error:
+System.IO.FileNotFoundException: El archivo no fue encontrado.
+   at EntidadesHostel.Xml`1.Deserializar(String ruta) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Serializacion\Xml.cs:line 62
+   at Vista.FrmMain.CargarHistorialClientes(String path) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\FrmMain.cs:line 457
+stack trace:
+   at EntidadesHostel.Xml`1.Deserializar(String ruta) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Serializacion\Xml.cs:line 62
+   at Vista.FrmMain.CargarHistorialClientes(String path) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\FrmMain.cs:line 457

@@ -13,21 +13,25 @@ using VistaHostel;
 
 namespace Vista
 {
-    public delegate void EncuestarCliente(Cliente cliente);
     
     public partial class FrmMain : Form
     {
         private Hostel hostel;
         string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Files/");
-        
-        public EncuestarCliente delegadoEncuestar;
-        public event EncuestarCliente notificarClienteEncuestado;
 
+        /// <summary>
+        /// Constructor publico del formulario
+        /// </summary>
         public FrmMain()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Funcion load del formulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmMain_Load(object sender, EventArgs e)
         {
 
@@ -38,6 +42,7 @@ namespace Vista
             CargarEmpleados();
             CargarClientes(path);
             CargarHabitaciones(path);
+            CargarHistorialClientes(path);
 
             btnModificarCliente.Enabled = false;
             btnAgregarCliente.Enabled = false;
@@ -46,7 +51,15 @@ namespace Vista
             btnAgregarEmpleado.Enabled = false;
             btnEliminarEmpleado.Enabled = false;
             rtbInformacion.Visible = false;
+            btnHistorialClientes.Visible = false;
+
         }
+
+        /// <summary>
+        /// Evento click del boton hostel
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnHostel_Click(object sender, EventArgs e)
         {
             dgvPersonas.Visible = false;
@@ -58,12 +71,17 @@ namespace Vista
             btnAgregarEmpleado.Enabled = false;
             btnEliminarEmpleado.Enabled = false;
             rtbInformacion.Visible = true;
+            btnHistorialClientes.Visible = true;
 
 
             rtbInformacion.Text = hostel.MostrarInformacionHostel();
         }
         
-
+        /// <summary>
+        /// Evento click del boton agregar empleado
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAgregarEmpleado_Click(object sender, EventArgs e)
         {
             AgregarEmpleado();
@@ -88,15 +106,18 @@ namespace Vista
                 }
                 ActualizarDGVEmpleado(hostel.Empleados);
             }
-            catch (PersonaException ex)
+            catch (Exception ex)
             {
                 Log.Guardar(ex);
-
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-
+        /// <summary>
+        /// Evento click del boton modificar empleado
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnModificarEmpleado_Click(object sender, EventArgs e)
         {
             ModificarEmpleado();
@@ -124,7 +145,7 @@ namespace Vista
                         EmpleadoDao.ActualizarEmpleado(empleado);
                         
 
-                        MessageBox.Show("Empleado modificado", "Empleado modificado", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("Empleado modificado", "Empleado modificado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
                     
                     CargarEmpleados();
@@ -151,6 +172,7 @@ namespace Vista
                 try
                 {
                     Empleado empleadoAEliminar = (Empleado)dgvPersonas.CurrentRow.DataBoundItem;
+
                     DialogResult dialogResult = MessageBox.Show($"Esta seguro que desea eliminar a: {empleadoAEliminar.ToString()}?", "Eliminar empleado", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 
                     if (dialogResult == DialogResult.Yes)
@@ -168,16 +190,26 @@ namespace Vista
                 {
                     Log.Guardar(ex);
 
-                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (Exception ex)
+                {
+                    Log.Guardar(ex);
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Seleccione un empleado a despedir.", "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                MessageBox.Show("Seleccione un empleado a despedir.", "Error", MessageBoxButtons.OKCancel , MessageBoxIcon.Error);
 
             }
         }
 
+        /// <summary>
+        /// Evento click del boton mostrar infornacion empleado 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnMostrarInformacionEmpleado_Click(object sender, EventArgs e)
         {
 
@@ -197,14 +229,23 @@ namespace Vista
             btnEliminarEmpleado.Enabled = true;
             btnAgregarEmpleado.Enabled = true;
             btnModificarEmpleado.Enabled = true;
-            
+            btnHistorialClientes.Visible = false;
+
+
             dgvPersonas.Visible = true;
             rtbInformacion.Visible = false;
 
             ActualizarDGVEmpleado(EmpleadoDao.Leer());
+
+
+
         }
 
-
+        /// <summary>
+        /// Evento click del boton eliminar empleado
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnEliminarEmpleado_Click(object sender, EventArgs e)
         {
             EliminarEmpleado();
@@ -252,7 +293,7 @@ namespace Vista
             btnAgregarCliente.Enabled = true;
             btnModificarCliente.Enabled = true;
             btnEliminarCliente.Enabled = true;
-
+            btnHistorialClientes.Visible = false;
             dgvPersonas.Visible = true;
 
             ActualizarDGVCliente(hostel.Clientes);
@@ -260,6 +301,11 @@ namespace Vista
 
         }
 
+        /// <summary>
+        /// Evento click del boton agregar cliente
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAgregarCliente_Click(object sender, EventArgs e)
         {
             AgregarCliente();            
@@ -290,6 +336,11 @@ namespace Vista
 
         }
 
+        /// <summary>
+        /// Evento click del boton modificar cliente
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnModificarCliente_Click(object sender, EventArgs e)
         {
             ModificarCLiente();
@@ -302,7 +353,7 @@ namespace Vista
         {
 
             Cliente cliente;
-            if (dgvPersonas.SelectedRows.Count >= 0)
+            if (dgvPersonas.SelectedRows.Count > 0)
             {
                 cliente = (Cliente)dgvPersonas.CurrentRow.DataBoundItem;
                 FrmAgregarModificarCliente frmAgregarModificarCliente = new FrmAgregarModificarCliente("Modificar Cliente", "Modificar cliente", cliente);
@@ -313,6 +364,11 @@ namespace Vista
 
         }
 
+        /// <summary>
+        /// Evento click del boton eliminar cliente
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnEliminarCliente_Click(object sender, EventArgs e)
         {
             EliminarCliente();
@@ -339,17 +395,18 @@ namespace Vista
                         hostel.HistorialClientes.Lista.Add(clienteAEliminar);
                         MessageBox.Show("Cliente eliminado.", "Cliente eliminado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
-                        Task.Run(() => EncuestarCliente(clienteAEliminar));
+                        Task.Run(() => Encuestar(clienteAEliminar));
 
-                        if(!(delegadoEncuestar is null))
-                        {
-                            delegadoEncuestar.Invoke(clienteAEliminar);
-                        }
                     }
 
                     ActualizarDGVCliente(hostel.Clientes);
                 }
                 catch (PersonaException ex)
+                {
+                    Log.Guardar(ex);
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                }
+                catch (Exception ex)
                 {
                     Log.Guardar(ex);
                     MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
@@ -362,25 +419,16 @@ namespace Vista
             }
         }
 
+        //Preguntar esto
         /// <summary>
         /// Encuesta al cliente pasado por parametro y notifica los resultados a partir de un evento
         /// </summary>
         /// <param name="cliente">cliente a encuestar</param>
-        private void EncuestarCliente(Cliente cliente)
+        private void Encuestar(Cliente cliente)
         {
-            Random random = new Random();
-            cliente.PuntuacionDelServicio = random.Next(0 , 6);
+            cliente.notificarClienteEncuestado += NotificarClienteEncuestado ;
 
-            if (random.Next(0, 2) == 1) 
-            {
-                cliente.VolveriaAVenir = true;
-            }
-            else 
-            {
-                cliente.VolveriaAVenir = false; 
-            }
-            
-            delegadoEncuestar += NotificarClienteEncuestado ;
+            cliente.EncuestarCliente();
 
         }
 
@@ -390,7 +438,12 @@ namespace Vista
         /// <param name="cliente"></param>
         private void NotificarClienteEncuestado(Cliente cliente)
         {
-            MessageBox.Show(cliente.MostrarResultadosEncuesta());
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"El cliente {cliente.ToString()} fue encuestado antes de salir.");
+            sb.AppendLine(cliente.MostrarResultadosEncuesta());
+            
+            MessageBox.Show(sb.ToString() , "Resultados encuesta", MessageBoxButtons.OK , MessageBoxIcon.Information);
+
         }
 
         /// <summary>
@@ -408,20 +461,12 @@ namespace Vista
                 hostel.Clientes = xml.Deserializar(ruta);
 
             }
-            catch (DirectoryNotFoundException ex)
+            catch (Exception ex)
             {
                 Log.Guardar(ex);
 
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
             }
-            catch (FileNotFoundException ex)
-            {
-                Log.Guardar(ex);
-
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
-
-            }
-
         }
 
         /// <summary>
@@ -432,29 +477,70 @@ namespace Vista
         {
             try
             {
-                
                 string ruta = Path.Combine(path, "Clientes.Xml");
 
                 Xml<Personas<Cliente>> xml = new Xml<Personas<Cliente>>();
 
                 xml.Serializar(ruta , hostel.Clientes);
             }
-            catch (DirectoryNotFoundException ex)
+            catch (Exception ex)
             {
                 Log.Guardar(ex);
 
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
             }
-            catch (FileNotFoundException ex)
+
+        }
+
+        /// <summary>
+        /// Carga el historial de clientes desde un archivo xml
+        /// </summary>
+        /// <param name="path">ruta que apunta a la carpeta donde se encuentra el archivo xml</param>
+        private void CargarHistorialClientes(string path )
+        {
+
+            try
+            {
+                string ruta = Path.Combine(path, "HistorialClientes.Xml");
+
+                Xml<Personas<Cliente>> xml = new Xml<Personas<Cliente>>();
+
+                hostel.HistorialClientes = xml.Deserializar(ruta);
+
+            }
+            catch (Exception ex)
             {
                 Log.Guardar(ex);
 
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            }
+        }
 
+        /// <summary>
+        /// Guarda el historial de clientes en un archivo xml
+        /// </summary>
+        /// <param name="path">ruta donde se encuentra el archivo</param>
+        private void GuardarHistorialClientes(string path)
+        {
+            try
+            {
+
+                string ruta = Path.Combine(path, "HistorialClientes.Xml");
+
+                Xml<Personas<Cliente>> xml = new Xml<Personas<Cliente>>();
+
+                xml.Serializar(ruta, hostel.HistorialClientes);
+            }
+            catch (Exception ex)
+            {
+                Log.Guardar(ex);
+
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
             }
 
 
         }
+
         /// <summary>
         /// Carga las habitaciones desde un archivo json
         /// </summary>
@@ -469,18 +555,11 @@ namespace Vista
                 hostel.Habitaciones = json.Deserializar(ruta);
 
             }
-            catch (DirectoryNotFoundException ex)
+            catch (Exception ex)
             {
                 Log.Guardar(ex);
 
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
-            }
-            catch (FileNotFoundException ex)
-            {
-                Log.Guardar(ex);
-
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
-
             }
 
         }
@@ -500,22 +579,19 @@ namespace Vista
                 json.Serializar(ruta, hostel.Habitaciones);
 
             }
-            catch (DirectoryNotFoundException ex)
+            catch (Exception ex)
             {
                 Log.Guardar(ex);
 
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
-            }
-            catch (FileNotFoundException ex)
-            {
-                Log.Guardar(ex);
-
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
-
             }
         }
 
-
+        /// <summary>
+        /// Evento click del boton log
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLogs_Click(object sender, EventArgs e)
         {
             MostrarLogs();
@@ -533,28 +609,25 @@ namespace Vista
             {
                 rtbInformacion.Text = Log.Leer();
             }
-            catch (FileNotFoundException ex)
-            {
-
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
-
-            }
-            catch (DirectoryNotFoundException ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
-            }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                Log.Guardar(ex);
 
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
             }
 
         }
 
+        /// <summary>
+        /// Evento closign del fornulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             GuardarClientes(path);
             GuardarHabitaciones(path);
+            GuardarHistorialClientes(path);
         }
 
         /// <summary>
@@ -565,10 +638,12 @@ namespace Vista
         {
             dgvPersonas.DataSource = null;
             dgvPersonas.DataSource = personas.Lista;
+            dgvPersonas.Select();
+
         }
 
         /// <summary>
-        /// Actualiza el data grid view con los datos de la lista pasada por parametros
+        /// Actualiza el data grid view con los datos de la lista de clientes pasada por parametros
         /// </summary>
         /// <param name="personas">lista a asignar en el form</param>
         private void ActualizarDGVCliente(Personas<Cliente> clientes)
@@ -577,7 +652,28 @@ namespace Vista
             dgvPersonas.DataSource = clientes.Lista;
             dgvPersonas.Columns[0].Visible = false;
             dgvPersonas.Columns[1].Visible = false;
+            dgvPersonas.Select();
         }
 
+        /// <summary>
+        /// Evento click del boton historial clientes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnHistorialClientes_Click(object sender, EventArgs e)
+        {
+            btnEliminarEmpleado.Enabled = false;
+            btnAgregarEmpleado.Enabled = false;
+            btnModificarEmpleado.Enabled = false;
+            btnModificarCliente.Enabled = false;
+            dgvPersonas.Visible = true;
+            btnAgregarCliente.Enabled = false;
+            btnEliminarCliente.Enabled = false;
+            rtbInformacion.Visible = true;
+            
+            ActualizarDGVCliente(hostel.HistorialClientes);
+            dgvPersonas.Columns[0].Visible = true;
+            dgvPersonas.Columns[1].Visible = true;
+        }
     }
 }

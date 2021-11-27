@@ -4,36 +4,36 @@
     <Empleado>
       <Nombre>Daniel</Nombre>
       <Apellido>Carpio</Apellido>
-      <Edad>40</Edad>
       <Dni>40215478</Dni>
       <Sexo>Masculino</Sexo>
+      <FechaNacimiento>1975-05-20T00:00:00</FechaNacimiento>
       <Salario>300000</Salario>
       <Puesto>Duenio</Puesto>
     </Empleado>
     <Empleado>
       <Nombre>Dario</Nombre>
       <Apellido>Mendez</Apellido>
-      <Edad>25</Edad>
       <Dni>41657852</Dni>
       <Sexo>Masculino</Sexo>
+      <FechaNacimiento>1987-04-15T00:00:00</FechaNacimiento>
       <Salario>60000</Salario>
       <Puesto>Limpiador</Puesto>
     </Empleado>
     <Empleado>
       <Nombre>Juan</Nombre>
       <Apellido>Carpio</Apellido>
-      <Edad>24</Edad>
       <Dni>43054784</Dni>
       <Sexo>Masculino</Sexo>
+      <FechaNacimiento>1996-02-12T00:00:00</FechaNacimiento>
       <Salario>100000</Salario>
       <Puesto>Gerente</Puesto>
     </Empleado>
     <Empleado>
       <Nombre>Martina</Nombre>
       <Apellido>Carpio</Apellido>
-      <Edad>30</Edad>
       <Dni>43657852</Dni>
       <Sexo>Femenino</Sexo>
+      <FechaNacimiento>1998-05-25T00:00:00</FechaNacimiento>
       <Salario>100000</Salario>
       <Puesto>Administrador</Puesto>
     </Empleado>

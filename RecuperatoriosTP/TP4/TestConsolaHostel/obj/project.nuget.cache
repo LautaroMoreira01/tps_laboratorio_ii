@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fzndJiISI3VE4YhsX4o7lv8dC7udeW+ZyRFPivlIU6WW2oUmbdHqCPlP7G72CFN2jbYvig4ZQk90EGoyUETblw==",
+  "dgSpecHash": "W/qScGJ1QPYmwQp1dvNgD1saGct8Suuyeua8dz1QOKlMb9/zm/GSXtW4HWNgiqgMvSeY+LIezYsZ2/7acngk8A==",
   "success": true,
-  "projectFilePath": "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\TP-04\\TestConsolaHostel\\TestConsolaHostel.csproj",
+  "projectFilePath": "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\TestConsolaHostel\\TestConsolaHostel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lauty\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\lauty\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

@@ -5,7 +5,7 @@ using System;
 namespace TestsTp4
 {
     [TestClass]
-    public class TestMetodoDeExtension
+    public class TestSegundaParte
     {
         [TestMethod]
         public void ExtensionDeDateTimeCalcularEdad_DeberiaRetornarLaEdadQueTendriaLaPersonaActualmente()

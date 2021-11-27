@@ -14,6 +14,7 @@ namespace TestConsolaHostel
 
             Personas<Empleado> empleados = new Personas<Empleado>(hostel.CapacidadMaximaEmpleados);
             Personas<Cliente> clientes = new Personas<Cliente>(hostel.CapacidadMaximaClientes);
+            Personas<Cliente> historialClientes = new Personas<Cliente>(100000000);
             List<Habitacion> habitaciones = new List<Habitacion>();
 
             Habitacion h1 = new Habitacion(4, "A01");
@@ -377,6 +378,58 @@ namespace TestConsolaHostel
                 Personas<Cliente> clientes2 = xmlSerilizarClientes.Deserializar(rutaArchivoXmlClientes);
 
                 Console.WriteLine(clientes2.Mostrar());
+
+            }
+            catch (FileNotFoundException ex)
+            {
+                Log.Guardar(ex);
+                Console.WriteLine("No se encontro el archivo");
+
+            }
+            catch (DirectoryNotFoundException ex)
+            {
+                Log.Guardar(ex);
+                Console.WriteLine("No se encontro el directorio");
+
+            }
+
+            Console.WriteLine("---------------historial de clientes---------------");
+
+
+            Cliente hc1 = new Cliente("Esteban", "Prieto", 65487894, new DateTime(2001, 12, 07), ESexo.Masculino);
+            Cliente hc2 = new Cliente("Lautaro", "Galarza", 45784521, new DateTime(1999, 11, 03), ESexo.Masculino);
+            Cliente hc3 = new Cliente("Mauricio", "Cerizza", 2152498, new DateTime(1997, 10, 12), ESexo.Masculino);
+            Cliente hc4 = new Cliente("Lucas", "Rodriguez", 12489654, new DateTime(1996, 09, 10), ESexo.Masculino);
+            Cliente hc5 = new Cliente("Franco", "Birriel", 34875654, new DateTime(1994, 05, 21), ESexo.Masculino);
+            Cliente hc6 = new Cliente("Juan", "Paez", 32548798, new DateTime(2002, 09, 04), ESexo.Masculino);
+            Cliente hc7 = new Cliente("Brian", "Diaz", 51236547, new DateTime(2001,07 , 27), ESexo.Masculino);
+            Cliente hc8 = new Cliente("Lucas", "Pereyra", 78456123, new DateTime(1999, 01, 10), ESexo.Masculino);
+
+            historialClientes.Lista.Add(hc1);
+            historialClientes.Lista.Add(hc2);
+            historialClientes.Lista.Add(hc3);
+            historialClientes.Lista.Add(hc4);
+            historialClientes.Lista.Add(hc5);
+            historialClientes.Lista.Add(hc6);
+            historialClientes.Lista.Add(hc7);
+            historialClientes.Lista.Add(hc8);
+
+            foreach (Cliente cliente in historialClientes.Lista)
+            {
+                cliente.EncuestarCliente();
+            }
+
+            try
+            {
+                string rutaArchivoXmlClientes = Path.Combine(path, "HistorialClientes.xml");
+
+                Xml<Personas<Cliente>> xmlSerilizarClientes = new Xml<Personas<Cliente>>();
+
+                xmlSerilizarClientes.Serializar(rutaArchivoXmlClientes, historialClientes);
+
+                Personas<Cliente> historialClientes2 = xmlSerilizarClientes.Deserializar(rutaArchivoXmlClientes);
+
+                Console.WriteLine(historialClientes2.Mostrar());
 
             }
             catch (FileNotFoundException ex)

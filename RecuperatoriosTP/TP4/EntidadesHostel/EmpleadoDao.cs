@@ -11,6 +11,10 @@ namespace EntidadesHostel
         private static SqlCommand sqlCommand;
         private static SqlConnection sqlConnection;
 
+
+        /// <summary>
+        /// Constructor estatico que asigna la connectionstring, inicializa el sqlcommand y sqlconnection 
+        /// </summary>
         static EmpleadoDao()
         {
             cadenaConexion = @"Server = .; Database = PERSONAS_DB; Trusted_Connection = True;";
@@ -55,7 +59,6 @@ namespace EntidadesHostel
             }
             catch (Exception)
             {
-
                 throw;
             }
             finally
@@ -126,7 +129,6 @@ namespace EntidadesHostel
             }
             catch (Exception)
             {
-
                 throw;
             }
             finally

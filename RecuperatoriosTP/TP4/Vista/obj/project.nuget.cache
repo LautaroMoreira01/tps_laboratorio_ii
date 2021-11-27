@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4+gqqn7CMfNpaxuHe2sD1fk44HvL2yHmuENLU+Whnblr4yLsO8pqDRQ+e/0D0VPOMK2r5LW9N6FyfOv+y8eDLw==",
+  "dgSpecHash": "5kW8ZUuMCwwhvsgnSS3JE6NJyU4B92cDGrbXzNRarL7aYnwbk3lbhPTfHgbMMqlGWkQAEANKRq5SXnWXl/R18g==",
   "success": true,
-  "projectFilePath": "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\TP-04\\Vista\\VistaHostel.csproj",
+  "projectFilePath": "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\Vista\\VistaHostel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lauty\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\lauty\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

@@ -6,9 +6,8 @@ namespace EntidadesHostel
 {
     public class Hostel
     {
-        private int cantidadMaximaEmpleados = 4 ;
+        private int cantidadMaximaEmpleados = 4;
         private int cantidadMaximaClientes = 50;
-
         private Personas<Empleado> empleados;
         private Personas<Cliente> clientes;
         private Personas<Cliente> historialClientes;
@@ -23,7 +22,7 @@ namespace EntidadesHostel
             habitaciones = new List<Habitacion>();
             empleados = new Personas<Empleado>(cantidadMaximaEmpleados);                    
             clientes = new Personas<Cliente>(cantidadMaximaClientes);
-            historialClientes = new Personas<Cliente>();
+            historialClientes = new Personas<Cliente>( );
         }
 
         /// <summary>
@@ -46,14 +45,25 @@ namespace EntidadesHostel
             Cliente clienteMasGrande = clientes.PersonaMasGrande();
             Empleado empleadoMasChico = empleados.PersonaMasChica();
             Empleado empleadoMasGrande = empleados.PersonaMasGrande();
+            Empleado empleadoSalarioMasAlto = BuscarEmpleadoConElSalarioMasAlto();
+            Empleado empleadoSalarioMasBajo = BuscarEmpleadoConElSalarioMasBajo();
+            float promedioSalarial = CalcularPromedioSalarioParaEmpleados();
 
+            sb.AppendLine();
             sb.AppendLine($"---------------------------{nombre} HOSTEL--------------------------");
+            sb.AppendLine();
+
             sb.AppendLine($"------------Habitaciones------------");
+            sb.AppendLine();
+
             sb.AppendLine($"Cantidad de habitaciones: {habitaciones.Count}");
             sb.AppendLine($"Cantidad total de camas: {CantidadDeCamas}");
             sb.AppendLine($"Promedio de camas por habitacion: {CalcularPromedioDeCamasPorHabitacion()}");
+            sb.AppendLine();
 
             sb.AppendLine($"------------Clientes------------");
+            sb.AppendLine();
+            
             sb.AppendLine($"Capacidad maxima de clientes: {clientes.CapacidadMaxima}");
             sb.AppendLine($"Cantidad de clientes: {clientes.Count} de {cantidadMaximaClientes}");
             sb.AppendLine($"Cantidad de clientes hombres: {clientes.CantidadDeHombres} de {clientes.Count} ({CalcularPorcentaje(clientes.Count, clientes.CantidadDeHombres):0.00}%)");
@@ -63,8 +73,12 @@ namespace EntidadesHostel
             sb.AppendLine($"Promedio edad de todos los clientes hombres: {clientes.CalcularPromedioEdadesHombres()}");
             sb.AppendLine($"Promedio edad de todos las clientas mujeres: {clientes.CalcularPromedioEdadesMujeres()}");
             sb.AppendLine($"Promedio edad de todos los clientes: {clientes.CalcularPromedioEdadesTotal()}");
+            sb.AppendLine();
 
+            sb.AppendLine();
             sb.AppendLine($"------------Empleados------------");
+            sb.AppendLine();
+
             sb.AppendLine($"Capacidad maxima de empleados: {empleados.CapacidadMaxima}");
             sb.AppendLine($"Cantidad de empleados: {empleados.Count} de {cantidadMaximaEmpleados}");
             sb.AppendLine($"Cantidad de empleados hombres: {empleados.CantidadDeHombres} de {empleados.Count} ({CalcularPorcentaje(empleados.Count, empleados.CantidadDeHombres):0.00}%)");
@@ -74,10 +88,18 @@ namespace EntidadesHostel
             sb.AppendLine($"Promedio edad de todos los empleados hombres: {empleados.CalcularPromedioEdadesHombres()}");
             sb.AppendLine($"Promedio edad de todos las empleadas mujeres: {empleados.CalcularPromedioEdadesMujeres()}");
             sb.AppendLine($"Promedio edad de todos los empleados: {empleados.CalcularPromedioEdadesTotal()}");
+            sb.AppendLine($"Promedio salarial de los empleados: {promedioSalarial:0.00}");
+            sb.AppendLine($"Empleados que superan el promedio salarial: {CantidadDeEmpleadosQueSuperanElPromedioSalarial()}");
+            sb.AppendLine($"Empleado con el salario mas alto es: {empleadoSalarioMasAlto.Nombre} con {empleadoSalarioMasAlto.Salario}");
+            sb.AppendLine($"Empleado con el salario mas bajo es: {empleadoSalarioMasBajo.Nombre} con {empleadoSalarioMasBajo.Salario}");
+
 
             if(historialClientes.Count > 0)
             {
+                sb.AppendLine();
                 sb.AppendLine($"------------Historial de clientes------------");
+                sb.AppendLine();
+
                 sb.AppendLine($"Cantidad de clientes que pasaron por el hostel: {historialClientes.Count}");
                 sb.AppendLine($"Cantidad de clientes hombres que pasaron por el hostel: {historialClientes.CantidadDeHombres} de {historialClientes.Count} ({CalcularPorcentaje(historialClientes.Count, historialClientes.CantidadDeHombres):0.00}%)");
                 sb.AppendLine($"Cantidad de clientes mujeres que pasaron por el hostel: {historialClientes.CantidadDeMujeres} de {historialClientes.Count}  ({CalcularPorcentaje(historialClientes.Count, historialClientes.CantidadDeMujeres):0.00}%)");
@@ -87,10 +109,70 @@ namespace EntidadesHostel
                 sb.AppendLine($"Promedio edad de todos las clientas mujeres: {historialClientes.CalcularPromedioEdadesMujeres()}");
                 sb.AppendLine($"Promedio edad de todos los clientes: {historialClientes.CalcularPromedioEdadesTotal()}");
                 sb.AppendLine($"Promedio Puntuacion del hostel: {PromedioPuntuacionDelHostel():0.00}");
-                sb.AppendLine($"Promedio personas que volverian a venir al hostel: {PromedioDePersonasQueVolverianAlHostel():0.00} ({CalcularPorcentaje(historialClientes.Count,CantidadDeClientesQueVolverianAlHostel()  ):0.00}%)");
+                sb.AppendLine($"Cantidad de personas que volverian a venir al hostel: {CantidadDeClientesQueVolverianAlHostel()} ({CalcularPorcentaje(historialClientes.Count,CantidadDeClientesQueVolverianAlHostel()  ):0.00}%)");
+           
             }
 
             return sb.ToString();
+        }
+
+        /// <summary>
+        /// Busca al empleado con el salario mas alto
+        /// </summary>
+        /// <returns>El empleado con el salario mas alto</returns>
+        private Empleado BuscarEmpleadoConElSalarioMasAlto()
+        {
+            Empleado empleadoConSalarioMasAlto = null ;
+
+            foreach (Empleado empleado in empleados.Lista)
+            {
+                if(empleadoConSalarioMasAlto is null || empleado.Salario > empleadoConSalarioMasAlto.Salario)
+                {
+                    empleadoConSalarioMasAlto = empleado;
+                }
+            }
+
+            return empleadoConSalarioMasAlto;
+
+        }
+        
+        /// <summary>
+        /// Busca al empleado con el salario mas bajo
+        /// </summary>
+        /// <returns>El empleado con el salario mas bajo</returns>
+        private Empleado BuscarEmpleadoConElSalarioMasBajo()
+        {
+            Empleado empleadoConSalarioMasBajo = null ;
+
+            foreach (Empleado empleado in empleados.Lista)
+            {
+                if(empleadoConSalarioMasBajo is null || empleado.Salario < empleadoConSalarioMasBajo.Salario)
+                {
+                    empleadoConSalarioMasBajo = empleado;
+                }
+            }
+
+            return empleadoConSalarioMasBajo;
+
+        }
+
+        /// <summary>
+        /// Busca la cantidad de empleados que supera el promedio salarial.
+        /// </summary>
+        /// <returns>Int con la cantidad de empleados que superan el promedio salarial</returns>
+        private int CantidadDeEmpleadosQueSuperanElPromedioSalarial()
+        {
+            int cant = 0;
+            float promedioSalarial = CalcularPromedioSalarioParaEmpleados();
+
+            foreach (Empleado empleado in empleados.Lista)
+            {
+                if(empleado.Salario > promedioSalarial)
+                {
+                    cant++;
+                }
+            }
+            return cant;
         }
 
 
