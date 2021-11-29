@@ -204,7 +204,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 765);
+            this.ClientSize = new System.Drawing.Size(760, 763);
             this.Controls.Add(this.btnHistorialClientes);
             this.Controls.Add(this.dgvPersonas);
             this.Controls.Add(this.btnLogs);
@@ -219,7 +219,8 @@
             this.Controls.Add(this.btnModificarCliente);
             this.Controls.Add(this.btnAgregarEmpleado);
             this.Controls.Add(this.lblNombre);
-            this.MinimumSize = new System.Drawing.Size(776, 692);
+            this.MaximumSize = new System.Drawing.Size(776, 802);
+            this.MinimumSize = new System.Drawing.Size(776, 802);
             this.Name = "FrmMain";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

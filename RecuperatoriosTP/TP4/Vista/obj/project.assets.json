@@ -510,11 +510,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\Vista\\VistaHostel.csproj",
+      "projectUniqueName": "D:\\Desktop\\test recuperatorios tps\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\Vista\\VistaHostel.csproj",
       "projectName": "VistaHostel",
-      "projectPath": "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\Vista\\VistaHostel.csproj",
+      "projectPath": "D:\\Desktop\\test recuperatorios tps\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\Vista\\VistaHostel.csproj",
       "packagesPath": "C:\\Users\\lauty\\.nuget\\packages\\",
-      "outputPath": "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\Vista\\obj\\",
+      "outputPath": "D:\\Desktop\\test recuperatorios tps\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\Vista\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -535,8 +535,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\EntidadesHostel\\EntidadesHostel.csproj": {
-              "projectPath": "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\EntidadesHostel\\EntidadesHostel.csproj"
+            "D:\\Desktop\\test recuperatorios tps\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\EntidadesHostel\\EntidadesHostel.csproj": {
+              "projectPath": "D:\\Desktop\\test recuperatorios tps\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\EntidadesHostel\\EntidadesHostel.csproj"
             }
           }
         }

@@ -13,7 +13,18 @@ namespace EntidadesHostel
         /// <returns>int edad</returns>
         public static int CalcularEdadActual(this DateTime fechaNacimiento)
         {
-            return DateTime.Today.AddTicks(-fechaNacimiento.Ticks).Year - 1;
+            int edad = DateTime.Today.Year - fechaNacimiento.Year;
+
+            if (DateTime.Today.Month < fechaNacimiento.Month)
+            {
+                --edad;
+            }
+            else if (DateTime.Today.Month == fechaNacimiento.Month && DateTime.Today.Day < fechaNacimiento.Day)
+            {
+                --edad;
+            }
+
+            return edad;
         }
     }
 

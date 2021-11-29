@@ -658,3 +658,48 @@ System.IO.FileNotFoundException: El archivo no fue encontrado.
 stack trace:
    at EntidadesHostel.Xml`1.Deserializar(String ruta) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Serializacion\Xml.cs:line 62
    at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 322
+
+------------------------------
+Fecha y hora:
+29/11/2021 15:15:50
+Tipo de exepcion:
+EntidadesHostel.PersonaException: No es posible agregar la persona porque la lista ya se encuentra llena.
+   at EntidadesHostel.Personas`1.op_Addition(Personas`1 personas, T personita) in D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Personas.cs:line 62
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 139
+Error:
+EntidadesHostel.PersonaException: No es posible agregar la persona porque la lista ya se encuentra llena.
+   at EntidadesHostel.Personas`1.op_Addition(Personas`1 personas, T personita) in D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Personas.cs:line 62
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 139
+stack trace:
+   at EntidadesHostel.Personas`1.op_Addition(Personas`1 personas, T personita) in D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Personas.cs:line 62
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 139
+
+------------------------------
+Fecha y hora:
+29/11/2021 15:15:50
+Tipo de exepcion:
+EntidadesHostel.PersonaException: No es posible agregar la persona porque la persona ya se encuentra en la lista.
+   at EntidadesHostel.Personas`1.op_Addition(Personas`1 personas, T personita) in D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Personas.cs:line 58
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 199
+Error:
+EntidadesHostel.PersonaException: No es posible agregar la persona porque la persona ya se encuentra en la lista.
+   at EntidadesHostel.Personas`1.op_Addition(Personas`1 personas, T personita) in D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Personas.cs:line 58
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 199
+stack trace:
+   at EntidadesHostel.Personas`1.op_Addition(Personas`1 personas, T personita) in D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Personas.cs:line 58
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 199
+
+------------------------------
+Fecha y hora:
+29/11/2021 15:15:50
+Tipo de exepcion:
+System.IO.FileNotFoundException: El archivo no fue encontrado.
+   at EntidadesHostel.Xml`1.Deserializar(String ruta) in D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Serializacion\Xml.cs:line 62
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 318
+Error:
+System.IO.FileNotFoundException: El archivo no fue encontrado.
+   at EntidadesHostel.Xml`1.Deserializar(String ruta) in D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Serializacion\Xml.cs:line 62
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 318
+stack trace:
+   at EntidadesHostel.Xml`1.Deserializar(String ruta) in D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\Serializacion\Xml.cs:line 62
+   at TestConsolaHostel.Program.Main(String[] args) in D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\TestConsolaHostel\Program.cs:line 318

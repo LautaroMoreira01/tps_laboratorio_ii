@@ -47,3 +47,13 @@ D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\obj\D
 D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\obj\Debug\netstandard2.1\EntidadesHostel.csproj.CoreCompileInputs.cache
 D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\obj\Debug\netstandard2.1\EntidadesHostel.dll
 D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\obj\Debug\netstandard2.1\EntidadesHostel.pdb
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\bin\Debug\netstandard2.1\EntidadesHostel.deps.json
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\bin\Debug\netstandard2.1\EntidadesHostel.dll
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\bin\Debug\netstandard2.1\EntidadesHostel.pdb
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\obj\Debug\netstandard2.1\EntidadesHostel.csproj.AssemblyReference.cache
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\obj\Debug\netstandard2.1\EntidadesHostel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\obj\Debug\netstandard2.1\EntidadesHostel.AssemblyInfoInputs.cache
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\obj\Debug\netstandard2.1\EntidadesHostel.AssemblyInfo.cs
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\obj\Debug\netstandard2.1\EntidadesHostel.csproj.CoreCompileInputs.cache
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\obj\Debug\netstandard2.1\EntidadesHostel.dll
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\EntidadesHostel\obj\Debug\netstandard2.1\EntidadesHostel.pdb

@@ -11,9 +11,9 @@ namespace TestsTp4
         public void ExtensionDeDateTimeCalcularEdad_DeberiaRetornarLaEdadQueTendriaLaPersonaActualmente()
         {
             //Arrange
-            int edadEsperada = 21;
+            int edadEsperada = 20;
             int edadDevuelta; 
-            DateTime fechaNacmiento = new DateTime(2000, 03, 06);
+            DateTime fechaNacmiento = new DateTime(2001, 06, 06);
 
             //Act
             edadDevuelta = DateTimeEx.CalcularEdadActual(fechaNacmiento);

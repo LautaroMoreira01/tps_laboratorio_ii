@@ -37,6 +37,15 @@
       <PuntuacionDelServicio>0</PuntuacionDelServicio>
       <VolveriaAVenir>false</VolveriaAVenir>
     </Cliente>
+    <Cliente>
+      <Nombre>Juana</Nombre>
+      <Apellido>Hidalgo</Apellido>
+      <Dni>20123654</Dni>
+      <Sexo>Femenino</Sexo>
+      <FechaNacimiento>2001-07-26T00:00:00</FechaNacimiento>
+      <PuntuacionDelServicio>0</PuntuacionDelServicio>
+      <VolveriaAVenir>false</VolveriaAVenir>
+    </Cliente>
   </Lista>
   <CapacidadMaxima>50</CapacidadMaxima>
 </PersonasOfCliente>

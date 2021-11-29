@@ -116,3 +116,33 @@ D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\obj\Debug\net5.
 D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\obj\Debug\net5.0-windows\ref\VistaHostel.dll
 D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\obj\Debug\net5.0-windows\VistaHostel.pdb
 D:\Desktop\Lautaro\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\obj\Debug\net5.0-windows\VistaHostel.genruntimeconfig.cache
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\bin\Debug\net5.0-windows\VistaHostel.exe
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\bin\Debug\net5.0-windows\VistaHostel.deps.json
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\bin\Debug\net5.0-windows\VistaHostel.runtimeconfig.json
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\bin\Debug\net5.0-windows\VistaHostel.runtimeconfig.dev.json
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\bin\Debug\net5.0-windows\VistaHostel.dll
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\bin\Debug\net5.0-windows\ref\VistaHostel.dll
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\bin\Debug\net5.0-windows\VistaHostel.pdb
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\bin\Debug\net5.0-windows\System.Text.Json.dll
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\bin\Debug\net5.0-windows\EntidadesHostel.dll
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\bin\Debug\net5.0-windows\EntidadesHostel.pdb
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\obj\Debug\net5.0-windows\VistaHostel.csproj.AssemblyReference.cache
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\obj\Debug\net5.0-windows\VistaHostel.FrmAgregarModificarCliente.resources
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarModificarEmpleado.resources
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\obj\Debug\net5.0-windows\Vista.FrmMain.resources
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\obj\Debug\net5.0-windows\VistaHostel.csproj.GenerateResource.cache
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\obj\Debug\net5.0-windows\VistaHostel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\obj\Debug\net5.0-windows\VistaHostel.AssemblyInfoInputs.cache
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\obj\Debug\net5.0-windows\VistaHostel.AssemblyInfo.cs
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\obj\Debug\net5.0-windows\VistaHostel.csproj.CoreCompileInputs.cache
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\obj\Debug\net5.0-windows\VistaHostel.csproj.CopyComplete
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\obj\Debug\net5.0-windows\VistaHostel.dll
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\obj\Debug\net5.0-windows\ref\VistaHostel.dll
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\obj\Debug\net5.0-windows\VistaHostel.pdb
+D:\Desktop\test recuperatorios tps\tps_laboratorio_ii\RecuperatoriosTP\TP4\Vista\obj\Debug\net5.0-windows\VistaHostel.genruntimeconfig.cache

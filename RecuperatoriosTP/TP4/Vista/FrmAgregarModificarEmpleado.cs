@@ -58,17 +58,18 @@ namespace Vista
         /// </summary>
         private void btnAgregarModificar_Click(object sender, EventArgs e)
         {
+            DateTime fechaNacimiento;
             try
             {
                 if (ValidarCampos())
                 {
-                    
+                    fechaNacimiento = new DateTime(dtpFechaDeNacimiento.Value.Year , dtpFechaDeNacimiento.Value.Month , dtpFechaDeNacimiento.Value.Day);
                     int dni = int.Parse(tbDni.Text);
                     float salario = float.Parse(tbSalario.Text, NumberStyles.Any, CultureInfo.InvariantCulture);
 
                     if(empleado is null)
                     {
-                        empleado = new Empleado(tbNombre.Text, tbApellido.Text, dni, dtpFechaDeNacimiento.Value,
+                        empleado = new Empleado(tbNombre.Text, tbApellido.Text, dni, fechaNacimiento,
                         (ESexo)cbSexo.SelectedItem, (EPuesto)cbPuesto.SelectedItem, salario);
 
                     }
@@ -77,7 +78,7 @@ namespace Vista
                         empleado.Nombre = tbNombre.Text;
                         empleado.Apellido = tbApellido.Text;
                         empleado.Dni = dni;
-                        empleado.FechaNacimiento = dtpFechaDeNacimiento.Value;
+                        empleado.FechaNacimiento = fechaNacimiento;
                         empleado.Sexo = (ESexo)cbSexo.SelectedItem;
                         empleado.Puesto = (EPuesto)cbPuesto.SelectedItem;
                         empleado.Salario = salario;
@@ -226,15 +227,19 @@ namespace Vista
         /// <exception cref="CampoInvalidoException">excepcion a lanzar si el campo es invalido</exception>
         private bool ValidarCampoFechaDeNacimiento()
         {
+            DateTime fechaNacimiento = dtpFechaDeNacimiento.Value;
+            int edad = fechaNacimiento.CalcularEdadActual();
 
-            if (dtpFechaDeNacimiento.Value < DateTime.Now)
+
+            if (edad >= 20)
             {
                 return true;
             }
             else
             {
-                throw new CampoInvalidoException("El campo fecha de nacimiento no puede ser mayor a la fecha actual.");
+                throw new CampoInvalidoException("El campo fecha de nacimiento no puede ser menor a 20 años.");
             }
+
         }
 
 
@@ -270,5 +275,6 @@ namespace Vista
         {
             Close();
         }
+
     }
 }

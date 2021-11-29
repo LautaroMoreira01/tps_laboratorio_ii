@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6jSBXn0ld6STKVmNjWWTnbXQb3qkeRKEUJK9vFXSBEIYr29lzE8lKrjRot2uCrtBf3dwDLVmRVBxgjGPUP6d4Q==",
+  "dgSpecHash": "tCu5yg3qBnoMvbq5ApZ9zQZ9wUQaka5YPNk0mDmU81MfWRyuL98lx12CEKcurYCWjrCiv2HfDrAMI423QRYVow==",
   "success": true,
-  "projectFilePath": "D:\\Desktop\\Lautaro\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\EntidadesHostel\\EntidadesHostel.csproj",
+  "projectFilePath": "D:\\Desktop\\test recuperatorios tps\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\EntidadesHostel\\EntidadesHostel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lauty\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\lauty\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

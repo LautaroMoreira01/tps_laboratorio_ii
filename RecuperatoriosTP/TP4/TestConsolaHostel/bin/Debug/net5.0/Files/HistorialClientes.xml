@@ -7,7 +7,7 @@
       <Dni>65487894</Dni>
       <Sexo>Masculino</Sexo>
       <FechaNacimiento>2001-12-07T00:00:00</FechaNacimiento>
-      <PuntuacionDelServicio>4</PuntuacionDelServicio>
+      <PuntuacionDelServicio>3</PuntuacionDelServicio>
       <VolveriaAVenir>true</VolveriaAVenir>
     </Cliente>
     <Cliente>
@@ -16,8 +16,8 @@
       <Dni>45784521</Dni>
       <Sexo>Masculino</Sexo>
       <FechaNacimiento>1999-11-03T00:00:00</FechaNacimiento>
-      <PuntuacionDelServicio>2</PuntuacionDelServicio>
-      <VolveriaAVenir>false</VolveriaAVenir>
+      <PuntuacionDelServicio>4</PuntuacionDelServicio>
+      <VolveriaAVenir>true</VolveriaAVenir>
     </Cliente>
     <Cliente>
       <Nombre>Mauricio</Nombre>
@@ -25,8 +25,8 @@
       <Dni>2152498</Dni>
       <Sexo>Masculino</Sexo>
       <FechaNacimiento>1997-10-12T00:00:00</FechaNacimiento>
-      <PuntuacionDelServicio>2</PuntuacionDelServicio>
-      <VolveriaAVenir>false</VolveriaAVenir>
+      <PuntuacionDelServicio>0</PuntuacionDelServicio>
+      <VolveriaAVenir>true</VolveriaAVenir>
     </Cliente>
     <Cliente>
       <Nombre>Lucas</Nombre>
@@ -34,8 +34,8 @@
       <Dni>12489654</Dni>
       <Sexo>Masculino</Sexo>
       <FechaNacimiento>1996-09-10T00:00:00</FechaNacimiento>
-      <PuntuacionDelServicio>1</PuntuacionDelServicio>
-      <VolveriaAVenir>true</VolveriaAVenir>
+      <PuntuacionDelServicio>2</PuntuacionDelServicio>
+      <VolveriaAVenir>false</VolveriaAVenir>
     </Cliente>
     <Cliente>
       <Nombre>Franco</Nombre>
@@ -43,8 +43,8 @@
       <Dni>34875654</Dni>
       <Sexo>Masculino</Sexo>
       <FechaNacimiento>1994-05-21T00:00:00</FechaNacimiento>
-      <PuntuacionDelServicio>2</PuntuacionDelServicio>
-      <VolveriaAVenir>false</VolveriaAVenir>
+      <PuntuacionDelServicio>3</PuntuacionDelServicio>
+      <VolveriaAVenir>true</VolveriaAVenir>
     </Cliente>
     <Cliente>
       <Nombre>Juan</Nombre>
@@ -52,8 +52,8 @@
       <Dni>32548798</Dni>
       <Sexo>Masculino</Sexo>
       <FechaNacimiento>2002-09-04T00:00:00</FechaNacimiento>
-      <PuntuacionDelServicio>4</PuntuacionDelServicio>
-      <VolveriaAVenir>true</VolveriaAVenir>
+      <PuntuacionDelServicio>5</PuntuacionDelServicio>
+      <VolveriaAVenir>false</VolveriaAVenir>
     </Cliente>
     <Cliente>
       <Nombre>Brian</Nombre>
@@ -61,7 +61,7 @@
       <Dni>51236547</Dni>
       <Sexo>Masculino</Sexo>
       <FechaNacimiento>2001-07-27T00:00:00</FechaNacimiento>
-      <PuntuacionDelServicio>3</PuntuacionDelServicio>
+      <PuntuacionDelServicio>1</PuntuacionDelServicio>
       <VolveriaAVenir>false</VolveriaAVenir>
     </Cliente>
     <Cliente>
@@ -70,8 +70,8 @@
       <Dni>78456123</Dni>
       <Sexo>Masculino</Sexo>
       <FechaNacimiento>1999-01-10T00:00:00</FechaNacimiento>
-      <PuntuacionDelServicio>3</PuntuacionDelServicio>
-      <VolveriaAVenir>false</VolveriaAVenir>
+      <PuntuacionDelServicio>1</PuntuacionDelServicio>
+      <VolveriaAVenir>true</VolveriaAVenir>
     </Cliente>
   </Lista>
   <CapacidadMaxima>100000000</CapacidadMaxima>

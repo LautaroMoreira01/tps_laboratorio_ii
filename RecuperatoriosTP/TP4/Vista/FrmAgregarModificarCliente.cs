@@ -45,11 +45,12 @@ namespace VistaHostel
             {
                 if (ValidarCampos())
                 {
+                    DateTime fechaNacimiento = new DateTime(dtpFechaDeNacimiento.Value.Year, dtpFechaDeNacimiento.Value.Month, dtpFechaDeNacimiento.Value.Day);
                     int dni = int.Parse(tbDni.Text);
 
                     if (cliente is null)
                     {
-                        cliente = new Cliente(tbNombre.Text, tbApellido.Text, dni, dtpFechaDeNacimiento.Value,
+                        cliente = new Cliente(tbNombre.Text, tbApellido.Text, dni, fechaNacimiento,
                         (ESexo)cbSexo.SelectedItem);
 
                     }
@@ -57,9 +58,8 @@ namespace VistaHostel
                     {
                         cliente.Nombre = tbNombre.Text;
                         cliente.Apellido = tbApellido.Text;
-                        cliente.Dni = dni;
-                        cliente.FechaNacimiento = dtpFechaDeNacimiento.Value;
-                        cliente.FechaNacimiento = dtpFechaDeNacimiento.Value;
+                        cliente.Dni = dni; 
+                        cliente.FechaNacimiento = fechaNacimiento;
                         cliente.Sexo = (ESexo)cbSexo.SelectedItem;
                     }
 
@@ -166,9 +166,8 @@ namespace VistaHostel
         /// <exception cref="CampoInvalidoException">excepcion a lanzar si el campo es invalido</exception>
         private bool ValidarCampoDni()
         {
-            int dni;
-
-            if (tbDni.Text != String.Empty && int.TryParse(tbDni.Text, out dni))
+            
+            if (tbDni.Text != String.Empty && int.TryParse(tbDni.Text, out int dni))
             {
                 return true;
             }
@@ -186,14 +185,18 @@ namespace VistaHostel
         /// <exception cref="CampoInvalidoException">excepcion a lanzar si el campo es invalido</exception>
         private bool ValidarCampoFechaDeNacimiento()
         {
-            
-            if (dtpFechaDeNacimiento.Value < DateTime.Now )
+
+            DateTime fechaNacimiento = dtpFechaDeNacimiento.Value;
+            int edad = fechaNacimiento.CalcularEdadActual();
+
+
+            if (edad >= 18)
             {
                 return true;
             }
             else
             {
-                throw new CampoInvalidoException("El campo fecha de nacimiento no puede ser mayor a la fecha actual.");
+                throw new CampoInvalidoException("El campo fecha de nacimiento no puede ser menor a 18 años.");
             }
         }
 

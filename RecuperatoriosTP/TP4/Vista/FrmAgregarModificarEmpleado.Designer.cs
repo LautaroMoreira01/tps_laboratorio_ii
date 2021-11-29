@@ -54,7 +54,7 @@
             this.cbSexo.Location = new System.Drawing.Point(39, 264);
             this.cbSexo.Name = "cbSexo";
             this.cbSexo.Size = new System.Drawing.Size(133, 23);
-            this.cbSexo.TabIndex = 29;
+            this.cbSexo.TabIndex = 10;
             // 
             // lblSexo
             // 
@@ -63,7 +63,7 @@
             this.lblSexo.Location = new System.Drawing.Point(40, 246);
             this.lblSexo.Name = "lblSexo";
             this.lblSexo.Size = new System.Drawing.Size(31, 15);
-            this.lblSexo.TabIndex = 28;
+            this.lblSexo.TabIndex = 9;
             this.lblSexo.Text = "sexo";
             // 
             // cbPuesto
@@ -74,7 +74,7 @@
             this.cbPuesto.Location = new System.Drawing.Point(40, 315);
             this.cbPuesto.Name = "cbPuesto";
             this.cbPuesto.Size = new System.Drawing.Size(133, 23);
-            this.cbPuesto.TabIndex = 27;
+            this.cbPuesto.TabIndex = 12;
             // 
             // tbSalario
             // 
@@ -82,7 +82,7 @@
             this.tbSalario.Location = new System.Drawing.Point(40, 363);
             this.tbSalario.Name = "tbSalario";
             this.tbSalario.Size = new System.Drawing.Size(133, 23);
-            this.tbSalario.TabIndex = 26;
+            this.tbSalario.TabIndex = 14;
             // 
             // lblPuesto
             // 
@@ -91,7 +91,7 @@
             this.lblPuesto.Location = new System.Drawing.Point(40, 297);
             this.lblPuesto.Name = "lblPuesto";
             this.lblPuesto.Size = new System.Drawing.Size(52, 15);
-            this.lblPuesto.TabIndex = 25;
+            this.lblPuesto.TabIndex = 11;
             this.lblPuesto.Text = "Posicion";
             // 
             // lblSalario
@@ -101,7 +101,7 @@
             this.lblSalario.Location = new System.Drawing.Point(40, 345);
             this.lblSalario.Name = "lblSalario";
             this.lblSalario.Size = new System.Drawing.Size(42, 15);
-            this.lblSalario.TabIndex = 24;
+            this.lblSalario.TabIndex = 13;
             this.lblSalario.Text = "Salario";
             // 
             // tbDni
@@ -110,7 +110,7 @@
             this.tbDni.Location = new System.Drawing.Point(40, 215);
             this.tbDni.Name = "tbDni";
             this.tbDni.Size = new System.Drawing.Size(133, 23);
-            this.tbDni.TabIndex = 23;
+            this.tbDni.TabIndex = 8;
             // 
             // tbApellido
             // 
@@ -118,7 +118,7 @@
             this.tbApellido.Location = new System.Drawing.Point(40, 101);
             this.tbApellido.Name = "tbApellido";
             this.tbApellido.Size = new System.Drawing.Size(133, 23);
-            this.tbApellido.TabIndex = 21;
+            this.tbApellido.TabIndex = 4;
             // 
             // tbNombre
             // 
@@ -126,7 +126,7 @@
             this.tbNombre.Location = new System.Drawing.Point(40, 57);
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(133, 23);
-            this.tbNombre.TabIndex = 20;
+            this.tbNombre.TabIndex = 2;
             // 
             // lblDni
             // 
@@ -135,7 +135,7 @@
             this.lblDni.Location = new System.Drawing.Point(40, 197);
             this.lblDni.Name = "lblDni";
             this.lblDni.Size = new System.Drawing.Size(25, 15);
-            this.lblDni.TabIndex = 19;
+            this.lblDni.TabIndex = 7;
             this.lblDni.Text = "Dni";
             // 
             // lblApellido
@@ -145,7 +145,7 @@
             this.lblApellido.Location = new System.Drawing.Point(40, 83);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(51, 15);
-            this.lblApellido.TabIndex = 17;
+            this.lblApellido.TabIndex = 3;
             this.lblApellido.Text = "Apellido";
             // 
             // lblNombre
@@ -155,7 +155,7 @@
             this.lblNombre.Location = new System.Drawing.Point(40, 39);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(51, 15);
-            this.lblNombre.TabIndex = 16;
+            this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre";
             // 
             // btnCancelar
@@ -164,7 +164,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(237, 290);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(96, 68);
-            this.btnCancelar.TabIndex = 30;
+            this.btnCancelar.TabIndex = 16;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -185,7 +185,7 @@
             this.dtpFechaDeNacimiento.Location = new System.Drawing.Point(40, 158);
             this.dtpFechaDeNacimiento.Name = "dtpFechaDeNacimiento";
             this.dtpFechaDeNacimiento.Size = new System.Drawing.Size(217, 23);
-            this.dtpFechaDeNacimiento.TabIndex = 32;
+            this.dtpFechaDeNacimiento.TabIndex = 6;
             // 
             // lblFechaDeNacimiento
             // 
@@ -194,7 +194,7 @@
             this.lblFechaDeNacimiento.Location = new System.Drawing.Point(40, 140);
             this.lblFechaDeNacimiento.Name = "lblFechaDeNacimiento";
             this.lblFechaDeNacimiento.Size = new System.Drawing.Size(117, 15);
-            this.lblFechaDeNacimiento.TabIndex = 31;
+            this.lblFechaDeNacimiento.TabIndex = 5;
             this.lblFechaDeNacimiento.Text = "Fecha de nacimiento";
             // 
             // FrmAgregarModificarEmpleado
@@ -218,7 +218,10 @@
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.btnAgregarModificar);
+            this.MaximumSize = new System.Drawing.Size(383, 475);
+            this.MinimumSize = new System.Drawing.Size(383, 475);
             this.Name = "FrmAgregarModificarEmpleado";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAgregarModificarEmpleado";
             this.Load += new System.EventHandler(this.FrmAgregarModificarEmpleado_Load);
             this.ResumeLayout(false);
